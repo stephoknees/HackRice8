@@ -213,5 +213,4 @@ def checkWinner():
 
 # Ensures that the below code is only evaluated when the file is executed, and ignored if the file is imported
 if __name__ == "__main__":
-    port = intios.environ.get("PORT", 5000)
-    app.run(host='0.0.0.0', port=port)  # Runs application
+    app.run(debug=True)  # Runs application
